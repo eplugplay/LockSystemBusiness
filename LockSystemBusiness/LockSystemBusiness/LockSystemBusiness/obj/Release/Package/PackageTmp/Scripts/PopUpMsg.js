@@ -41,6 +41,13 @@ function LoadSecondaryMsg(msg) {
 }
 
 function ShowPopUp(title, width, height) {
+    var isMobile = window.matchMedia("only screen and (max-width: 850px)");
+
+    if (isMobile.matches) {
+        width = '550';
+        height = '450';
+        //Conditional script here
+    }
     $("#item_popupwindow").dialog({
         autoOpen: false,
         modal: true,

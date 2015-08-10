@@ -404,17 +404,19 @@ ul#menu li.selected a
 
 .LoadedImgDesc
 {
-    margin-left: 4%;
+    float:right;
     margin-top: 10%;
     color: #000000;
     font-size: x-large;
     font-weight: bold;
 }
 
-#functiontitle
+.LoadedImg
 {
-    margin-left:2%;
+    margin-top: 15px;
+    float: left;
 }
+
 
 #feature
 {
@@ -429,19 +431,19 @@ ul#menu li.selected a
     font-weight:normal;
 }
 
+.imgFunctiontitle
+{
+    margin-top:2%;
+    margin-left:3px;
+    width:60%;
+}
+
 #txtFeature
 {
     margin-left:40px;
     width:180px;
     height: 100px;
     font-weight:normal;
-}
-
-.LoadedImg
-{
-    margin-top: 15px;
-    float: left;
-    width: 50%;
 }
 
 .ClearDiv
@@ -782,33 +784,49 @@ footer
         padding-left: 0px;
     }
 
-    /*for image description loaded*/
-    .LoadedImgDesc
-    {
-        margin-left: 15px;
-        margin-top: 15%;
-        color: #000000;
-        font-size: x-large;
-        font-weight: bold;
-    }
-
-#functiontitle
+/*for image description loaded*/
+.LoadedImgDesc
 {
-    margin-left:2%;
+    margin-top:4%;
+    float:right;
+    color: #000000;
+    font-size: x-large;
+    font-weight: bold;
+    width:300px;
+}
+
+.LoadedImg
+{
+    margin-top: 12%;
+    float: left;
+    width:40%;
+}
+
+.imgHiOne
+{
+   width: 100%;
 }
 
 #feature
 {
     font-size:2pt;
     float:right;
-    margin-right: 2%;
+    margin-right: 2px;
 }
 
 #locksFeature {
-    font-size: 9pt;
-    margin-right: 4%;
+    font-size: 8pt;
+    margin-right: 0px;
     font-weight:normal;
 }
+
+.imgFunctiontitle
+{
+    margin-top:2%;
+    margin-left:3px;
+    width:60%;
+}
+
 
 #txtFeature
 {
@@ -817,13 +835,6 @@ footer
     height: 100px;
     font-weight:normal;
 }
-
-    .LoadedImg
-    {
-        margin-top: 15px;
-        float: left;
-        width: 70%;
-    }
 
     #FbImg
     {

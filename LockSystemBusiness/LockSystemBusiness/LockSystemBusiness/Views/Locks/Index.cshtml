@@ -30,7 +30,7 @@
          if (tab == "tabs-1") {
              //$('#' + tab).html('<div class=\"LoadedImg\"> <a href="#" onclick="UpdateImages(); ">Go back</a><br> <br><img src="' + path + '" width=100% /> <br> <br><a href="#" onclick="UpdateWomen(); ">Go back</a> </div> <div class=\"LoadedImgDesc\">' + desc + '</div> ');
              $('#item_popupwindow').html("");
-             $('#item_popupwindow').html('<div class=\"LoadedImg\"><img src="' + path + '" width=100% /></div> <div class=\"LoadedImgDesc\">' + desc + '<br><br><img src="/Images/functiontitle.png\" /><br><div id=\"locksFeature\">' + feature + '</div></div>');
+             $('#item_popupwindow').html('<div class=\"LoadedImg\"><img class="\imgHiOne\" src="' + path + '" /></div> <div class=\"LoadedImgDesc\">' + desc + '<br><img class="\imgFunctiontitle\" src="/Images/functiontitle.png\" /><br><div id=\"locksFeature\">' + feature + '</div>');
              ShowPopUp('Lock', '900', '700');
          }
      }
