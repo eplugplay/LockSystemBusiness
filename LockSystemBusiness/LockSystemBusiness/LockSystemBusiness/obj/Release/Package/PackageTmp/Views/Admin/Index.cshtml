@@ -1,0 +1,715 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    
+<div class ="bar"><span class="barText"><h2>Admin Options</h2></span></div>
+ 
+    <style>
+
+        .btnNewImg{
+            border: 2px solid black;
+            width:150px;
+            height:25px;
+            text-align:center;
+        }
+
+        .btnDelete{
+            border: 2px solid black;
+            float:right;
+            width:80px;
+            height:25px;
+            text-align:center;
+        }
+
+        .btnEdit{
+            border: 2px solid black;
+            float:right;
+            margin-right:5px;
+            width:80px;
+            height:25px;
+            text-align:center;
+        }
+
+        .btnSaveNew{
+            border: 2px solid black;
+            float:right;
+            margin-right:3px;
+            width:100px;
+            height:25px;
+        }
+
+        .btnUpdate{
+            border: 2px solid black;
+            float:right;
+            margin-right:3px;
+            width:80px;
+            height:25px;
+            text-align:center;
+        }
+
+        .btnPageSave{
+            float:right;
+        }
+
+        .btnTabsSave{
+            float:right;
+        }
+
+        #tabsActive{
+            width:300px;
+        }
+
+        #chkActive{
+            margin-left:30px;
+        }
+    </style>
+
+ <script type="text/javascript">
+
+     $(document).ready(function () {
+         CKEDITOR.replace('editor1', {
+             height: '380px',
+             width: '100%',
+             resize_enabled: false,
+             forcePasteAsPlainText: true,
+             filebrowserImageUploadUrl: GetImgUploadPath(),
+             filebrowserBrowseUrl: GetImgBrowsePath(),
+             filebrowserWindowWidth: 2000,
+             filebrowserWindowHeight: 2000
+         });
+         CKEDITOR.replace('editor2', {
+             height: '380px',
+             width: '100%',
+             resize_enabled: false,
+             forcePasteAsPlainText: true,
+             filebrowserImageUploadUrl: GetImgUploadPath(),
+             filebrowserBrowseUrl: GetImgBrowsePath(),
+             filebrowserWindowWidth: 2000,
+             filebrowserWindowHeight: 2000
+         });
+         if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+
+         }
+         CKEDITOR.instances.editor1.setData("");
+         CKEDITOR.instances.editor2.setData("");
+         GetCategories();
+         SelectChangedCategories();
+         GetTabs();
+         SelectChangedTabs();
+         $("#tab1").on("click", function () {
+             UpdateImages();
+         });
+         $("#tab2").on("click", function () {
+
+         });
+         $("#tabs").tabs({
+
+         });
+
+         $("#mainTabs").tabs({
+
+         });
+         $("#Maintab1").on("click", function () {
+
+         });
+         $("#Maintab2").on("click", function () {
+             LoadPages("Home");
+             LoadPages("AboutUs");
+         });
+
+         $("#Maintab3").on("click", function () {
+
+         });
+
+         $("#articleTabs").tabs({
+
+         });
+         $("#homeTab1").on("click", function () {
+             LoadPages("Home");
+         });
+         $("#aboutUsTab1").on("click", function () {
+             LoadPages("AboutUs");
+         });
+
+         //         $("#tabs").tabs().css({
+         //             'height': '660px',
+         //             'overflow': 'auto',
+         //             'font-size': '10pt'
+         //         });
+     });
+
+     function SelectChangedCategories() {
+         $("#ddlCategories").change(function () {
+             var id = $("#ddlCategories").val();
+             if (id != -1) {
+                 UpdateImages();
+             }
+         });
+     }
+
+     function SelectChangedEditCategories() {
+         $("#ddlEditCategories").change(function () {
+             var id = $("#ddlEditCategories").val();
+             if (id != -1) {
+
+             }
+         });
+     }
+
+     function SelectChangedTabs() {
+         $("#ddlTabs").change(function () {
+            var id = $("#ddlTabs").val();
+             if (id != -1) {
+                 $.ajax({
+                     type: "POST",
+                     cache: false,
+                     url: "/Admin/LoadTabs",
+                     dataType: "json",
+                     async: false,
+                     data: { id: id },
+                     success: function (data) {
+                         if (data == 1)
+                         {
+                             $("#chkActive").prop('checked', true)
+                         }
+                         else
+                         {
+                             $("#chkActive").prop('checked', false)
+                         }
+                         return true;
+                     }
+                 });
+             }
+         });
+     }
+
+     function GetCategories() {
+         $("#ddlCategories").html("");
+         $.ajax({
+             type: "POST",
+             cache: false,
+             //this line needed to pass array
+             traditional: true,
+             url: "/Admin/LoadCategories",
+             dataType: "json",
+             async: false,
+             success: function (data) {
+                 var optionhtml = '<option value="' +
+        -1 + '">----select section</option>';
+                 $("#ddlCategories").append(optionhtml);
+                 $(data).each(function (i) {
+                     optionhtml = '<option value="' +
+        data[i].ID + '">' + data[i].Name + '</option>';
+                     $("#ddlCategories").append(optionhtml);
+                 });
+                 return true;
+             }
+         });
+     }
+
+     function GetEditCategories() {
+         $("#ddlEditCategories").html("");
+         $.ajax({
+             type: "POST",
+             cache: false,
+             //this line needed to pass array
+             traditional: true,
+             url: "/Admin/LoadCategories",
+             dataType: "json",
+             async: false,
+             success: function (data) {
+                 var optionhtml = '<option value="' +
+        -1 + '">----select section</option>';
+                 $("#ddlEditCategories").append(optionhtml);
+                 $(data).each(function (i) {
+                     optionhtml = '<option value="' +
+        data[i].ID + '">' + data[i].Name + '</option>';
+                     $("#ddlEditCategories").append(optionhtml);
+                 });
+                 return true;
+             }
+         });
+     }
+
+     function GetTabs() {
+         $("#ddlTabs").html("");
+         $.ajax({
+             type: "POST",
+             cache: false,
+             //this line needed to pass array
+             traditional: true,
+             url: "/Admin/GetTabs",
+             dataType: "json",
+             async: false,
+             success: function (data) {
+                 var optionhtml = '<option value="' +
+        -1 + '">----select tab</option>';
+                 $("#ddlTabs").append(optionhtml);
+                 $(data).each(function (i) {
+                     optionhtml = '<option value="' +
+        data[i].id + '">' + data[i].id + '</option>';
+                     $("#ddlTabs").append(optionhtml);
+                 });
+                 return true;
+             }
+         });
+     }
+
+     function UpdateTabs() {
+         var chkActive = null;
+         if ($("#chkActive").is(":checked")) {
+             chkActive = 1;
+         } else {
+             chkActive = 0;
+         }
+         var id = $("#ddlTabs").val();
+         if (id != -1) {
+             $.ajax({
+                 type: "POST",
+                 cache: false,
+                 async: false,
+                 url: "/Admin/UpdateTabs",
+                 dataType: "json",
+                 data: { id: id, active: chkActive },
+                 async: false,
+                 success: function (data) {
+                     if (data == "Successful") {
+                         LoadSecondaryMsg('Updated successfully.');
+                     }
+                     else {
+                         LoadSecondaryMsg('Did not update successfully.');
+                     }
+                     $("#popupwindow").dialog("close");
+                     return true;
+                 }
+             });
+         }
+         else {
+             LoadSecondaryMsg('Please select a tab.');
+             return false;
+         }
+         return true;
+     }
+
+     function UpdateImages() {
+         var id = $("#ddlCategories").val();
+         if (id != -1) {
+             $.ajax({
+                 url: '@Url.Action("ReloadImg", "Admin")',
+                 data: { Folder: id },
+                 type: 'POST',
+                 success: function (data) {
+                     $('#tabs-1').html(data);
+                 }
+             });
+         }
+     }
+
+     var confirmed = false;
+     $('#btnDelete').click(function (e) {
+         if (!confirmed) {
+             var that = $(this);
+             $("#popupwindow").dialog({
+                 buttons: {
+                     "Delete": function () {
+                         confirmed = true;
+                         that.trigger('click');
+                         $(this).dialog("close");
+                     },
+                     Cancel: function () {
+                         $(this).dialog("close");
+                     }
+                 }
+             });
+
+             e.stopPropagation();
+         } else {
+             confirmed = false;
+         }
+     });
+
+     function DeleteImage(path) {
+         $("#popupwindow").dialog({
+             autoOpen: false,
+             modal: true,
+             show: "fade",
+             height: "150",
+             width: "300px",
+             title: "Delete Image?",
+             buttons: {
+                 "Delete": function () {
+                     $.ajax({
+                         type: "POST",
+                         cache: false,
+                         async: false,
+                         url: "/Admin/DeleteImage",
+                         dataType: "json",
+                         data: { path: path },
+                         async: false,
+                         success: function (data) {
+                             if (data == "Successful") {
+                                 UpdateImages();
+                                 LoadSecondaryMsg('Deleted Successfully.');
+                                 $("#item_popupwindow").dialog("close");
+                             }
+                             else {
+                                 LoadSecondaryMsg('Did not delete Successfully.');
+                             }
+                             $("#popupwindow").dialog("close");
+                             return true;
+                         }
+                     });
+                 },
+                 "Cancel": function () {
+                     $(this).dialog("close");
+                 }
+             }
+         });
+         $("#popupwindow").html("Do you want to delete this image?");
+         $("#popupwindow").dialog("open");
+         return true;
+     }
+
+
+     function NewImage() {
+         $("#popupwindow").dialog({
+             autoOpen: false,
+             modal: true,
+             height: "450",
+             width: "500px",
+             show: "fade",
+             title: "New Image",
+             buttons: {
+                 //OK: function () { $(this).dialog("close"); }
+             }
+         });
+         $("#popupwindow").html("<span style=\"float:right\">Hide<input type=\"checkbox\" id=\"chkHidden\"></span><br\><br\><div style=\"text-align:center\"><input type=\"file\" name=\"UploadPDF\" id=\"txtUploadFile\" /></div><br><br><div style=\"text-align:center\">Category:<select style=\"margin-left:30px\" id=\"ddlEditCategories\"></select><br\><br\>Description:<input style=\"margin-left:12px\" id=\"txtImgName\" type=\"textbox\" ></span><br\><br\>Feature Description:<textarea maxlength=\"5000\" id=\"txtFeature\"></textarea></span><br><br><br><br><a href=\"javascript:;\" class=\"btnSaveNew\" onclick=\"if(UploadImage()==false) return false;\">Save</a>")
+         GetEditCategories();
+         $(document).ready(function () {
+             SelectChangedEditCategories();
+         });
+         $("#popupwindow").dialog("open");
+         return true;
+     }
+
+     function UploadImage() {
+         var upload = $("#txtUploadFile").val();
+         var folder = $("#ddlEditCategories option:selected").val();
+         var description = $("#txtImgName").val();
+         var feature = $("#txtFeature").val();
+         var hidden = $("#chkHidden").is(':checked');
+         var id = $("#ddlEditCategories").val();
+         var formData = new FormData();
+         var imagefile = document.getElementById("txtUploadFile").files[0];
+         var fileName = document.getElementById("txtUploadFile").value;
+         formData.append("1", imagefile);
+
+         var split = fileName.split('\\');
+         var filename = split[split.length - 1];
+         var extension = filename.split('.');
+         extension = extension[extension.length - 1];
+         if (ValidateImageDb(filename) == true) {
+             LoadSecondaryMsg('Image name already exists in database.');
+             return false;
+         }
+
+         if (upload == "")
+         {
+             LoadSecondaryMsg("Please select an image first.");
+             return false;
+         }
+
+         if (ValidateImageExtension(extension) == false) {
+             LoadSecondaryMsg('Please upload image files only.');
+             return false;
+         }
+
+         if (id == -1) {
+             LoadSecondaryMsg("Please select category.");
+             return false;
+         }
+         if (description == "") {
+             LoadSecondaryMsg("Please enter description.");
+             return false;
+         }
+
+         $("#popupwindow2").dialog({
+             autoOpen: false,
+             modal: true,
+             show: "fade",
+             title: "Upload Image?",
+             buttons: {
+                 "Upload": function () {
+                     $.ajax({
+                         type: "POST",
+                         url: "/Admin/UploadImage?description=" + description + "&folder=" + folder + "&hidden=" + hidden + "&feature=" + feature,
+                         contentType: false,
+                         processData: false,
+                         data: formData,
+                         async: false,
+                         success: function (data) {
+                             if (data == "Successful") {
+                                 LoadSecondaryMsg("Uploaded Successfully.");
+                                 UpdateImages();
+                             }
+                             else {
+                                 LoadSecondaryMsg("Upload Failed.");
+                             }
+                             $("#popupwindow").dialog("close");
+                             return true;
+                         }
+                     });
+                 },
+                 "Cancel": function () {
+                     $(this).dialog("close");
+                 }
+             }
+         });
+         $("#popupwindow2").html("Do you want to upload this image?");
+         $("#popupwindow2").dialog("open");
+         return true;
+     }
+
+     function StartFeature() {
+         $(document).ready(function () {
+             $('#txtFeature').keypress(function (e) {
+                 if (e.keyCode == 13) {
+                     e.preventDefault();
+                     this.value = this.value.substring(0, this.selectionStart) + "\n";
+                 }
+             });
+         });
+     }
+
+     function EditImage(path)
+     {
+         var filename = null;
+         var description = null;
+         var folder = null;
+         var hidden = null;
+         var feature = null;
+         $.ajax({
+             type: "POST",
+             url: "/Admin/GetImgInfo",
+             dataType: "json",
+             data: { path: path },
+             async: false,
+             success: function (data) {
+                 $(data).each(function (i) {
+                     filename = data[i].ImageFileName;
+                     description = data[i].ImageDescription;
+                     folder = data[i].ImageFolder;
+                     hidden = data[i].ImageHidden;
+                     feature = data[i].ImageFeature;
+                 });
+             }
+         });
+
+         $("#popupwindow").dialog({
+             autoOpen: false,
+             modal: true,
+             maxHeight: "700",
+             minHeight: "500",
+             width: "500px",
+             show: "fade",
+             title: "Edit Image",
+             buttons: {
+                 //OK: function () { $(this).dialog("close"); }
+             }
+         });
+         //$('#popupwindow').css('overflow', 'hidden');
+         $("#popupwindow").html("<span style=\"float:right\">Hide<input type=\"checkbox\" id=\"chkHidden\"></span><br\><br\><div style=\"text-align:center\"><img src=\"" + path + "\" width=\"50%\" /></div><br><br><div style=\"text-align:center\">Category:<select style=\"margin-left:30px\" id=\"ddlEditCategories\"></select><br\><br\>Description:<input style=\"margin-left:12px\" id=\"txtImgName\" type=\"textbox\" ></span><br\><br\>Feature:<textarea maxlength=\"5000\" id=\"txtFeature\" ></textarea></span><br><br><br><br><a href=\"javascript:;\" class=\"btnUpdate\" onclick=\"UpdateImgInfo(\'" + path + "\');\">Update</a> ")
+         GetEditCategories();
+         SelectChangedEditCategories();
+         $("#txtImgName").val(description);
+         $("#txtFeature").val(feature);
+         $("#ddlEditCategories").val(folder);
+         if (hidden == 0)
+         {
+             $("#chkHidden").attr('checked', false);
+         }
+         else
+         {
+             $("#chkHidden").attr('checked', true);
+         }
+         StartFeature();
+         $("#popupwindow").dialog("open");
+         return true;
+     }
+
+     
+     function UpdateImgInfo(path) {
+         var folder = $("#ddlEditCategories option:selected").val();
+         var description = $("#txtImgName").val();
+         var feature = $("#txtFeature").val();
+         alert(feature);
+         var hidden = $("#chkHidden").is(':checked');
+         var exist = false;
+         var split = path.split('/');
+         var newPath = "/" + folder + "/" + split[split.length - 1];
+         if (ValidateImage(newPath) == true) {
+             exist = true;
+         }
+
+         $("#popupwindow2").dialog({
+             autoOpen: false,
+             modal: true,
+             show: "fade",
+             title: "Update Image Info?",
+             buttons: {
+                 "Update": function () {
+                     $.ajax({
+                         type: "POST",
+                         cache: false,
+                         async: false,
+                         url: "/Admin/UpdateImgInfo",
+                         dataType: "json",
+                         data: { path: path, description: description, folder: folder, hidden: hidden, imgExist: exist, feature: feature },
+                         async: false,
+                         success: function (data) {
+                             if (data == "Successful") {
+                                 LoadSecondaryMsg('Updated Successfully.');
+                                 UpdateImages();
+                                 $("#item_popupwindow").dialog("close");
+                             }
+                             else {
+                                 LoadSecondaryMsg('Did not update Successfully.');
+                             }
+                             $("#popupwindow").dialog("close");
+                             return true;
+                         }
+                     });
+                 },
+                 "Cancel": function () {
+                     $(this).dialog("close");
+                 }
+             }
+         });
+         $("#popupwindow2").html("Do you want to update this image's info?");
+         $("#popupwindow2").dialog("open");
+         return true;
+     }
+
+     function ValidateImage(path)
+     {
+         var exist = false;
+         $.ajax({
+             type: "POST",
+             url: "/Admin/ValidateImage",
+             dataType: "json",
+             data: { path: path },
+             async: false,
+             success: function (data) {
+                 if (data == "Exist")
+                 {
+                     exist = true;
+                 }
+             }
+         });
+         return exist;
+     }
+
+     function ValidateImageDb(filename) {
+         var exist = false;
+         $.ajax({
+             type: "POST",
+             url: "/Admin/ValidateImageDb",
+             dataType: "json",
+             data: { filename: filename },
+             async: false,
+             success: function (data) {
+                 if (data == "Exist") {
+                     exist = true;
+                 }
+             }
+         });
+         return exist;
+     }
+
+     function ValidateImageExtension(extension) {
+         if (extension.toLowerCase().indexOf("jpg") >= 0 || extension.toLowerCase().indexOf("jpeg") >= 0 || extension.toLowerCase().indexOf("png") >= 0 || extension.toLowerCase().indexOf("gif") >= 0)
+         {
+             return true;
+         }
+         return false;
+     }
+
+     function UpdateView(tab, path, desc, feature) {
+         if (tab == "tabs-1") {
+             //$('#' + tab).html('<div class=\"LoadedImg\"> <a href="javascript:;" onclick="UpdateImages(); ">Go back</a><br> <br><img id=\"imgSingle\" src="' + path + '" width=100% /> <br> <br><a href=\"javascript:;\" class=\"btnDelete\" onclick=\"DeleteImage(\'' + path + '\');\">Delete</a><a href=\"javascript:;\" class=\"btnEdit\" onclick=\"EditImage(\'' + path + '\');\">Edit</a><a href="javascript:;" onclick="UpdateWomen(); ">Go back</a> </div> <div class=\"LoadedImgDesc\">' + desc + '</div>');
+             $('#item_popupwindow').html("");
+             $('#item_popupwindow').html('<div class=\"LoadedImg\"><img id=\"imgSingle\" src="' + path + '" width=100% /><br><br></div>' + '<a href=\"javascript:;\" class=\"btnDelete\" onclick=\"DeleteImage(\'' + path + '\');\">Delete</a><a href=\"javascript:;\" class=\"btnEdit\" onclick=\"EditImage(\'' + path + '\');\">Edit</a>' + ' <div class=\"LoadedImgDesc\"><br>' + desc + '</div><br><br><img id=\"functiontitle\" src="/Images/functiontitle.png\" /><br><div id=\"feature\">' + feature + '</div>');
+             ShowPopUp('Lock', '900', '700');
+         }
+     }
+
+</script>
+</head>
+<body>
+<br />
+    <div id="mainTabs">
+        <ul>
+            <li id="Maintab1"><a id="mainLinkTab1" href="#mainTabs-1">Images</a></li>
+            <li id="Maintab2"><a id="mainLinkTab2" href="#mainTabs-2">Edit Pages</a></li>
+            <li id="Maintab3"><a id="mainLinkTab3" href="#mainTabs-3">Show/Hide Tabs</a></li>
+        </ul>
+        <div id="mainTabs-1">
+            <div id="tabs">
+                <br />
+                <label>Load Section:</label><br />
+                <select id="ddlCategories"></select>
+                <a href="javascript:;" class="btnNewImg" onclick="NewImage()">Upload New Image</a>
+                <br />
+                <br />
+                @*<ul>
+                    <li id="tab1"><a id="linkTab1" href="#tabs-1">Locks</a></li>
+                    <li id="tab2"><a id="linkTab2" href="#tabs-2">Men</a></li>
+                </ul>*@
+                <div id="tabs-1">
+                    @*@Html.Partial("_AllImgWomen")*@
+                </div>
+                <div id="tabs-2">
+                    @*@Html.Partial("_AllImgMen")*@
+                </div>
+            </div>
+        </div>
+        <div id="mainTabs-2">
+            <div id="articleTabs">
+                <ul>
+                    <li id="homeTab1"><a id="linkTab1" href="#homeTab">Home</a></li>
+                    <li id="aboutUsTab1"><a id="linkTab2" href="#aboutUsTab">About Us</a></li>
+                </ul>
+                <div id="homeTab">
+                    <div class="editor-field">
+                        @Html.TextArea("editor1", new { @Id = "editor1" })
+                    </div>
+                    <a href="javascript:;" class="btnPageSave" onclick="UpdatePage('Home')">Update</a>
+                </div>
+                <div id="aboutUsTab">
+                    <div class="editor-field">
+                        @Html.TextArea("editor2", new { @Id = "editor2" })
+                    </div>
+                    <a href="javascript:;" class="btnPageSave" onclick="UpdatePage('AboutUs')">Update</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="mainTabs-3">
+            <div id="optionsTabs">
+                <div id="tabsActive">
+                    <select id="ddlTabs"></select>
+                    <input id="chkActive" type="checkbox" />
+                    <label>Active</label>
+                    <a href="javascript:;" class="btnTabsSave" onclick="UpdateTabs()">Update</a>
+                </div>
+            </div>
+        </div>
+     </div>
+</body>
+</html>

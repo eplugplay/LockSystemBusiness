@@ -1,0 +1,318 @@
+﻿@model LockSystemBusiness.Models.ContactUs
+@using System.Web.UI.WebControls
+
+@{
+    ViewBag.Title = "Contact Us";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style type="text/css">
+    #dvLoading
+	{
+	   position: absolute;
+	   height: 30px;
+	   width: 50px;
+	   position: fixed;
+	   z-index: 1000;
+	   left: 50%;
+	   top: 50%;
+	   margin: -25px 0 0 -25px;
+	   /*filter: alpha(opacity=50); /* internet explorer */
+       /*-khtml-opacity: 0.5;      /* khtml, old safari */
+       /*-moz-opacity: 0.5;       /* mozilla, netscape */
+       /*opacity: 0.5;           /* fx, safari, opera */
+	}
+</style>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+
+    });
+
+    function validateZip(zip) {
+        if (/(^\d{5}$)|(^\d{5}-\d{4}$)/.test(zip)) {
+            return true;
+        }
+        return false;
+    }
+
+    function checkEmail(emailId) {
+        if (/^\w+([\.-]?\w+)*@@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(emailId)) {
+            return true;
+        }
+        return false;
+    }
+
+    function checkPhoneNumber(subjectString) {
+        var regexObj = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+        if (regexObj.test(subjectString)) {
+            var formattedPhoneNumber = subjectString.replace(regexObj, "($1) $2-$3");
+            var PhoneNo = $('.PhoneNo').val(formattedPhoneNumber);
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    function ResetCaptcha() {
+        $.post('@Url.Action("ResetSetCaptchaText", "ContactUs")', {}, function (data) {
+            var img = document.getElementById("imgCaptcha");
+            img.src = '@Url.Content("~/Captcha.ashx?query=")' + Math.random();
+        });
+    }
+
+    function Validate() {
+        var Name = $('.Name').val();
+        var BusinessName = $('.BusinessName').val();
+        var Address = $('.Address').val();
+        var City = $('.City').val();
+        var State = $('.State').val();
+        var Zip = $('.Zip').val();
+        var Phone = $('.Phone').val();
+        var Email = $('.Email').val();
+        var Inquiry = $('.Inquiry').val();
+        var CaptchaValue = $('.Captcha').val();
+
+        if (Name == "") {
+            InformationPopUp("Please enter your name.");
+            $('.Name').focus();
+            return false;
+        }
+
+        if (Address == "") {
+            InformationPopUp("Please enter your address.");
+            $('.Address').focus();
+            return false;
+        }
+
+        if (City == "") {
+            InformationPopUp("Please enter your city.");
+            $('.City').focus();
+            return false;
+        }
+
+        if (State == "") {
+            InformationPopUp("Please enter your state.");
+            $('.State').focus();
+            return false;
+        }
+
+        if (Zip == "") {
+            InformationPopUp("Please enter your zip code.");
+            $('.Zip').focus();
+            return false;
+        }
+
+        if (validateZip(Zip) == false) {
+            InformationPopUp("Please enter a valid zip code.");
+            $('.Zip').focus();
+            return false;
+        }
+
+        if (Phone != "") {
+           /* if (Phone == "") {
+                InformationPopUp("Please enter your phone number.");
+                $('.Phone').focus();
+                return false;
+            }*/
+
+            if (checkPhoneNumber(Phone) == false) {
+                InformationPopUp("Please enter valid phone number.");
+                $('.Phone').focus();
+                return false;
+            }
+        }
+
+        if (Email == "") {
+            InformationPopUp("Please enter your email.");
+            $('.Email').focus();
+            return false;
+        }
+
+        if (checkEmail(Email) == false) {
+            InformationPopUp("Please enter a valid email.");
+            $('.Email').focus();
+            return false;
+        }
+
+
+        if (Inquiry == "") {
+            InformationPopUp("Please enter your inquiry.");
+            $('.Email').focus();
+            return false;
+        }
+
+
+        var value;
+
+        function set_value(x) {
+            value = x;
+        }
+        $.ajaxSetup({ async: false });
+        $.post('@Url.Action("ReturnSession", "ContactUs")', {}, function (data) {
+            if (data == CaptchaValue) {
+                set_value(true);
+            }
+            else {
+                set_value(false);
+            }
+        });
+
+        // show captcha error msg
+        if (value == false) {
+            InformationPopUp("Please re-enter captcha.");
+            return false;
+        }
+        else {
+            $('#dvLoading').html('<img src="/Content/themes/base/images/Loading.gif"/>');
+
+            $.ajax({
+                type: "POST",
+                async: true,
+                url: '@Url.Action("PostForm", "ContactUs")',
+                data: {
+                    TeamName: Name, BusinessName: BusinessName, Address: Address, City: City, State: State, Zip: Zip, Phone: Phone, Email: Email, Inquiry: Inquiry, Captcha: CaptchaValue
+                },
+                success: function (data) {
+                    if (data == "Success") {
+                        InformationPopUp("Inquiry sent successfully.");
+                    }
+                    else {
+                        InformationPopUp("Inquiry failed to sent.");
+                    }
+                    $('#dvLoading').empty();
+                }
+            });
+        }
+
+    }
+
+        </script>
+<div id="dvLoading"></div>
+        <br />
+        <br />
+        <br />
+<h2>Contact Us</h2>
+        <table id="tblContactUs" cellpadding="20" cellspacing="10">
+            <tr>
+                <td width="300px" class="row">
+                    <div class="label">Name:</div>
+                    <div class="RequiredLabel">*</div>
+                </td>
+                <td width="350px">
+                    <div class="ControlPositions">@Html.TextBoxFor(model => model.Name, new { @class = "Name", style = "width: 250px; height: 25px;" })</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="label">Business Name:</div>
+                </td>
+                <td>
+                    <div class="ControlPositions"> @Html.TextBoxFor(model => model.BusinessName, new { @class = "BusinessName", style = "width: 250px; height: 25px;" }) </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="row">
+                    <div class="label">Address:</div>
+                    <div class="RequiredLabel">*</div>
+                </td>
+                <td>
+                    <div class="ControlPositions"> @Html.TextBoxFor(model => model.Address, new { @class = "Address", style = "width: 250px; height: 25px;" }) </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="label">City:</div>
+                    <div class="RequiredLabel">*</div>
+                </td>
+                <td>
+                    <div class="ControlPositions"> @Html.TextBoxFor(model => model.City, new { @class = "City", style = "width: 250px; height: 25px;" })</div>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="row">
+                    <div class="label">State:</div>
+                    <div class="RequiredLabel">*</div>
+                </td>
+                <td>
+                    <div class="ControlPositions"> @Html.TextBoxFor(model => model.State, new { @class = "State", style = "width: 250px; height: 25px;" }) </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="label">Zip:</div>
+                    <div class="RequiredLabel">*</div>
+                </td>
+                <td>
+                    <div class="ControlPositions"> @Html.TextBoxFor(model => model.Zip, new { @class = "Zip", style = "width: 250px; height: 25px;" }) </div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="row">
+                    <div class="label">Phone:</div>
+                </td>
+                <td>
+                    <div class="ControlPositions"> @Html.TextBoxFor(model => model.Phone, new { @class = "Phone", style = "width: 250px; height: 25px;" }) </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="label">Email:</div>
+                    <div class="RequiredLabel">*</div>
+                </td>
+                <td>
+                    <div class="ControlPositions"> @Html.TextBoxFor(model => model.Email, new { @class = "Email", style = "width: 250px; height: 25px;" }) </div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="row">
+                    <div id="lblRecruitedBy" class="label">Inquiry:</div>
+                    <div id="lblStar" class="RequiredLabel">*</div>
+                </td>
+                <td>
+                    <div id="txtInquiry" class="ControlPositions"> @Html.TextAreaFor(model => model.Inquiry, new { @class = "Inquiry", style = "width: 250px; height: 25px;" }) <br /></div>
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td style="float:right">
+                    <div style="font-size:medium;">
+                        <div style="float:right">
+                            <img id="imgCaptcha" src="@Url.Content("~/Captcha.ashx")" />
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td style="float:right">
+                    @Html.TextBoxFor(model => model.Captcha, new { @class = "Captcha", style = "width: 165px; height: 25px;" })
+                    <img src="@Url.Content("/Content/themes/base/images/refresh.png")" id="RefreshCaptcha" onclick="ResetCaptcha();" value="Refresh" />
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>
+                    <div style="float:right;margin-left:125px;"><input id="btnSubmit" type="submit" value="Submit" onclick="if(Validate()== false) return false;" /></div>
+                </td>
+                <td></td>
+            </tr>
+        </table>

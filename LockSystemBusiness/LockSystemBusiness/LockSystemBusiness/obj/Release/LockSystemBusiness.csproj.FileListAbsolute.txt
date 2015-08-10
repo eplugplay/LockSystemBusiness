@@ -1,0 +1,216 @@
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\bin\LockSystemBusiness.dll.config
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\bin\LockSystemBusiness.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\bin\LockSystemBusiness.pdb
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\bin\Antlr3.Runtime.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\bin\DotNetOpenAuth.Core.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\bin\EntityFramework.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\bin\Microsoft.Web.WebPages.OAuth.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\bin\Newtonsoft.Json.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\bin\System.Net.Http.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\bin\System.Net.Http.Formatting.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\bin\System.Net.Http.WebRequest.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\bin\System.Web.Helpers.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\bin\System.Web.Http.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\bin\System.Web.Http.WebHost.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\bin\System.Web.Mvc.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\bin\System.Web.Optimization.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\bin\System.Web.Razor.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\bin\System.Web.WebPages.Deployment.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\bin\System.Web.WebPages.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\bin\System.Web.WebPages.Razor.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\bin\WebGrease.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\bin\WebMatrix.Data.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\bin\WebMatrix.WebData.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\bin\EntityFramework.xml
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\bin\Newtonsoft.Json.xml
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\bin\System.Net.Http.xml
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\bin\System.Net.Http.Formatting.xml
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\bin\System.Net.Http.WebRequest.xml
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\bin\System.Web.Helpers.xml
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\bin\System.Web.Http.xml
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\bin\System.Web.Http.WebHost.xml
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\bin\System.Web.Mvc.xml
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\bin\System.Web.Razor.xml
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\bin\System.Web.WebPages.xml
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\bin\System.Web.WebPages.Deployment.xml
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\bin\System.Web.WebPages.Razor.xml
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\bin\WebMatrix.Data.xml
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\bin\Microsoft.Web.WebPages.OAuth.xml
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\bin\WebMatrix.WebData.xml
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\bin\DotNetOpenAuth.Core.xml
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\obj\Release\LockSystemBusiness.csprojResolveAssemblyReference.cache
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\obj\Release\LockSystemBusiness.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\obj\Release\LockSystemBusiness.pdb
+C:\Users\Steve Yi\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\LockSystemBusiness.dll.config
+C:\Users\Steve Yi\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\LockSystemBusiness.dll
+C:\Users\Steve Yi\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\LockSystemBusiness.pdb
+C:\Users\Steve Yi\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\Antlr3.Runtime.dll
+C:\Users\Steve Yi\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\Steve Yi\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\DotNetOpenAuth.Core.dll
+C:\Users\Steve Yi\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\Steve Yi\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\Steve Yi\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\Steve Yi\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\Steve Yi\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\EntityFramework.dll
+C:\Users\Steve Yi\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Steve Yi\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\Microsoft.Web.WebPages.OAuth.dll
+C:\Users\Steve Yi\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\Newtonsoft.Json.dll
+C:\Users\Steve Yi\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\System.Net.Http.dll
+C:\Users\Steve Yi\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\System.Net.Http.Formatting.dll
+C:\Users\Steve Yi\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\System.Net.Http.WebRequest.dll
+C:\Users\Steve Yi\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\System.Web.Helpers.dll
+C:\Users\Steve Yi\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\System.Web.Http.dll
+C:\Users\Steve Yi\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\System.Web.Http.WebHost.dll
+C:\Users\Steve Yi\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\System.Web.Mvc.dll
+C:\Users\Steve Yi\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\System.Web.Optimization.dll
+C:\Users\Steve Yi\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\System.Web.Razor.dll
+C:\Users\Steve Yi\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Steve Yi\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\System.Web.WebPages.dll
+C:\Users\Steve Yi\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\System.Web.WebPages.Razor.dll
+C:\Users\Steve Yi\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\WebGrease.dll
+C:\Users\Steve Yi\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\WebMatrix.Data.dll
+C:\Users\Steve Yi\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\WebMatrix.WebData.dll
+C:\Users\Steve Yi\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\EntityFramework.xml
+C:\Users\Steve Yi\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\Newtonsoft.Json.xml
+C:\Users\Steve Yi\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\System.Net.Http.xml
+C:\Users\Steve Yi\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\System.Net.Http.Formatting.xml
+C:\Users\Steve Yi\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\System.Net.Http.WebRequest.xml
+C:\Users\Steve Yi\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\System.Web.Helpers.xml
+C:\Users\Steve Yi\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\System.Web.Http.xml
+C:\Users\Steve Yi\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\System.Web.Http.WebHost.xml
+C:\Users\Steve Yi\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\System.Web.Mvc.xml
+C:\Users\Steve Yi\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\System.Web.Razor.xml
+C:\Users\Steve Yi\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\System.Web.WebPages.xml
+C:\Users\Steve Yi\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Steve Yi\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\System.Web.WebPages.Razor.xml
+C:\Users\Steve Yi\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\WebMatrix.Data.xml
+C:\Users\Steve Yi\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\Microsoft.Web.WebPages.OAuth.xml
+C:\Users\Steve Yi\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\WebMatrix.WebData.xml
+C:\Users\Steve Yi\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\Steve Yi\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\DotNetOpenAuth.Core.xml
+C:\Users\Steve Yi\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\Steve Yi\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\Steve Yi\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\Steve Yi\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\Steve Yi\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\obj\Release\LockSystemBusiness.csprojResolveAssemblyReference.cache
+C:\Users\Steve Yi\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\obj\Release\LockSystemBusiness.dll
+C:\Users\Steve Yi\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\obj\Release\LockSystemBusiness.pdb
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\LockSystemBusiness.dll.config
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\LockSystemBusiness.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\LockSystemBusiness.pdb
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\Antlr3.Runtime.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\DotNetOpenAuth.Core.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\EntityFramework.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\Microsoft.Web.WebPages.OAuth.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\Newtonsoft.Json.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\System.Net.Http.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\System.Net.Http.Formatting.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\System.Net.Http.WebRequest.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\System.Web.Helpers.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\System.Web.Http.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\System.Web.Http.WebHost.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\System.Web.Mvc.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\System.Web.Optimization.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\System.Web.Razor.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\System.Web.WebPages.Deployment.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\System.Web.WebPages.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\System.Web.WebPages.Razor.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\WebGrease.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\WebMatrix.Data.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\WebMatrix.WebData.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\EntityFramework.xml
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\Newtonsoft.Json.xml
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\System.Net.Http.xml
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\System.Net.Http.Formatting.xml
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\System.Net.Http.WebRequest.xml
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\System.Web.Helpers.xml
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\System.Web.Http.xml
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\System.Web.Http.WebHost.xml
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\System.Web.Mvc.xml
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\System.Web.Razor.xml
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\System.Web.WebPages.xml
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\System.Web.WebPages.Deployment.xml
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\System.Web.WebPages.Razor.xml
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\WebMatrix.Data.xml
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\Microsoft.Web.WebPages.OAuth.xml
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\WebMatrix.WebData.xml
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\DotNetOpenAuth.Core.xml
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\obj\Release\LockSystemBusiness.csprojResolveAssemblyReference.cache
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\obj\Release\LockSystemBusiness.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\obj\Release\LockSystemBusiness.pdb
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\LockSystemBusiness.dll.config
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\LockSystemBusiness.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\LockSystemBusiness.pdb
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\Antlr3.Runtime.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\DotNetOpenAuth.Core.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\EntityFramework.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\Microsoft.Web.WebPages.OAuth.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\Newtonsoft.Json.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\System.Net.Http.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\System.Net.Http.Formatting.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\System.Net.Http.WebRequest.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\System.Web.Helpers.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\System.Web.Http.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\System.Web.Http.WebHost.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\System.Web.Mvc.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\System.Web.Optimization.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\System.Web.Razor.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\System.Web.WebPages.Deployment.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\System.Web.WebPages.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\System.Web.WebPages.Razor.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\WebGrease.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\WebMatrix.Data.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\WebMatrix.WebData.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\EntityFramework.xml
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\Newtonsoft.Json.xml
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\System.Net.Http.xml
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\System.Net.Http.Formatting.xml
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\System.Net.Http.WebRequest.xml
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\System.Web.Helpers.xml
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\System.Web.Http.xml
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\System.Web.Http.WebHost.xml
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\System.Web.Mvc.xml
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\System.Web.Razor.xml
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\System.Web.WebPages.xml
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\System.Web.WebPages.Deployment.xml
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\System.Web.WebPages.Razor.xml
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\WebMatrix.Data.xml
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\Microsoft.Web.WebPages.OAuth.xml
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\WebMatrix.WebData.xml
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\DotNetOpenAuth.Core.xml
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\obj\Release\LockSystemBusiness.csprojResolveAssemblyReference.cache
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\obj\Release\LockSystemBusiness.dll
+C:\Users\stevey\Documents\GitHub\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\LockSystemBusiness\obj\Release\LockSystemBusiness.pdb

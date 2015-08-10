@@ -1,0 +1,8 @@
+﻿<div id="slideshow">
+    @foreach (var image in ViewData.Model)
+    {
+        <div>
+            <img src="@image.Folder/@image.Path" height="100%" width="100%" alt="@image.Description" />
+        </div>
+    }
+</div>

@@ -1,0 +1,35 @@
+﻿@{
+    ViewBag.Title = "Home";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Progressive Locks</title>
+</head>
+<body>
+    <div class="content-wrapper">
+        <div class="bar">
+            <!--<span class="barText">
+                <h2>
+                    Welcome!
+                </h2>
+            </span>-->
+        </div>
+        <br />
+        <br />
+        @if (ViewData.Model.Count > 0)
+        {
+            @Html.Partial("_HomeImageScroll")
+        }
+        <br />
+        <br />
+    </div>
+    <div id="middleParagraph">
+        @Html.Partial("_Page")
+    </div>
+</body>
+</html>

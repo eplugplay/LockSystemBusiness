@@ -1,0 +1,77 @@
+﻿@using LockSystemBusiness.Models
+
+@{
+    ViewBag.Title = "Pants";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+<br />
+<div class ="bar"><span class="barText"><h2>Locks</h2></span></div>
+ 
+
+ <script type="text/javascript">
+
+     function UpdateImages() {
+         $.ajax({
+             url: '@Url.Action("ReloadImg", "Locks")',
+             data: {},
+             type: 'POST',
+             success: function (data) {
+                 $('#tabs-1').html(data);
+             }
+         });
+     }
+
+     function UpdateView(tab, path, desc, feature) {
+         if (tab == "tabs-1") {
+             //$('#' + tab).html('<div class=\"LoadedImg\"> <a href="#" onclick="UpdateImages(); ">Go back</a><br> <br><img src="' + path + '" width=100% /> <br> <br><a href="#" onclick="UpdateWomen(); ">Go back</a> </div> <div class=\"LoadedImgDesc\">' + desc + '</div> ');
+             $('#item_popupwindow').html("");
+             $('#item_popupwindow').html('<div class=\"LoadedImg\"><img src="' + path + '" width=100% /></div> <div class=\"LoadedImgDesc\">' + desc + '<br><br><img src="/Images/functiontitle.png\" /><br><div id=\"locksFeature\">' + feature + '</div></div>');
+             ShowPopUp('Lock', '900', '700');
+         }
+     }
+
+
+     $(function () {
+         $("#tab1").on("click", function () {
+             UpdateImages();
+         });
+         $("#tab2").on("click", function () {
+
+         });
+
+         $("#tabs").tabs({
+
+         });
+//         $("#tabs").tabs().css({
+//             'height': '660px',
+//             'overflow': 'auto',
+//             'font-size': '10pt'
+//         });
+
+     });
+
+
+    </script>
+</head>
+<body>
+<br />
+   <div id="tabs">
+<ul>
+<li id="tab1"><a href="#tabs-1">Lock Systems</a></li>
+@*<li id="tab2"><a href="#tabs-2">Men</a></li>*@
+</ul>
+<div id="tabs-1">
+ @Html.Partial("_AllImg")
+</div>
+<!--<div id="tabs-2">
+
+</div>-->
+</div>
+
+</body>
+</html>
